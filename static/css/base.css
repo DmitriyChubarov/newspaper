@@ -1,0 +1,32 @@
+html {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    font-size: 25px;
+    /* border-bottom: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.top a {
+    color: white;
+    font-size: 60px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 705px;
+}
+

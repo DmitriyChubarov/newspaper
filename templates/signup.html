@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="signup">
+    <p>Регистрация</p>
+    <form method="post">
+        {% csrf_token %}
+        <div class="signup_form">
+            <input type="text" name="username" placeholder="Введите имя" required>
+            <input type="password" name="password1" placeholder="Введите пароль" required>
+            <input type="password" name="password2" placeholder="Повторите пароль" required>
+         <button type="submit">Создать аккаунт</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

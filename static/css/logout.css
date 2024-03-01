@@ -1,0 +1,10 @@
+.logout_form button{
+    color: white;
+    padding: 8px;
+    background-color: rgb(196,42,33);
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    width: 230px;
+    margin: 10px;
+}

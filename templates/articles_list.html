@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for articles in object_list %}
+
+{{ articles.body }}
+
+{% endfor %}
+
+<div class="home_1">
+    {% if user.is_authenticated %}
+        <a href="{% url 'logout_' %}">Выйти</a>
+        <a href="{% url 'changepass' %}">Изменить парольsdadsa</a>
+    {% else %}
+        <div class="dont_auth">
+            <p class="dont_auth_sig"><a href="{% url 'login' %}">Войти</a></p>
+            <p class="dont_auth_reg"><a href="{% url 'signup' %}">Создать аккаунт</a></p>
+        </div>
+    {% endif %}
+    </div>
+
+{% endblock %}
