@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <div class="new_post">
+        <a href="{% url 'articles_create' %}">Добавить новый пост</a>
+    </div>
     {% for articles in object_list %}
         <div class="list_main">
             <div class="list_title">
-               <p class="list_title_text">{{ articles.title }} |
+               <p class="list_title_text">
+                <a href="{% url 'articles_detail' articles.pk %}">{{ articles.title }} |</a>
                 {{ articles.author }} |
                 {{ articles.date}}</p> 
             </div>

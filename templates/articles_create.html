@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="create">
+        <form method="post">
+            <div class="create_form">
+                {% csrf_token %}
+                <select name="author" required>
+                        <option value="{{ user.id }}">{{ user.username }}</option>
+                </select>
+                <input type="text" name="title" placeholder="Введите название" required>
+                <input type="text" name="body" placeholder="Введите текст" required>
+                <button type="submit">Создать</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

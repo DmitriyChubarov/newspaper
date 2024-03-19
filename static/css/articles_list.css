@@ -1,3 +1,21 @@
+.new_post {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 80px;
+}
+
+.new_post a {
+    text-decoration: none;
+    color: white;
+}
+
+.new_post a:hover {
+    opacity: 0.8;
+}
+
 .list_main {
     display: flex;
     justify-content: flex-start;
@@ -26,12 +44,34 @@
     height: 1%;
 }
 
+.list_title_text a {
+    color: white;
+    text-decoration: none;
+}
+
+.list_title_text a:hover {
+    opacity: 0.8;
+}
+
+
 .list_body {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+    /* border-bottom: 1px solid rgb(65,65,65); */
+    padding: 8px;
+    padding-left: 30px;
+}
+
+.list_body_1 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px solid rgb(65,65,65);
     padding: 8px;
     padding-left: 30px;
 }
@@ -39,5 +79,27 @@
 .list_body_text {
     font-family:'Verdana';
     line-height: 25px;
+}
+
+.list_set {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%; 
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.list_set a {
+    text-decoration: none;
+    color: white;
+}
+
+.list_set_text {
+    text-transform: uppercase;
+    height: 1%;
+    font-size: 16px;
 }
 

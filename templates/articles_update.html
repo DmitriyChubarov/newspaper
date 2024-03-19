@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="update">
+        <form method="post" class="update_form_main">
+            {% csrf_token %}
+            <div class="update_form">
+            <input class="update_form_title" type="text" name="title" value="{{ form.title.value }}" placeholder="Введите заголовок" required>
+            <input class="update_form_body" type="text" name="body" value="{{ form.body.value }}" placeholder="Введите текст статьи" required>
+            <button type="submit">Изменить</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

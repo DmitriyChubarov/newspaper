@@ -1,0 +1,14 @@
+.list_body_1 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px solid rgb(65,65,65);
+    padding: 8px;
+    padding-left: 30px;
+}
+
+.list_set_text a:hover {
+    opacity: 0.8;
+}
