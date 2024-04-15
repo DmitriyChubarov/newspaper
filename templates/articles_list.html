@@ -5,7 +5,7 @@
         <a href="{% url 'articles_create' %}">Добавить новый пост</a>
     </div>
     {% for articles in object_list %}
-        <div class="list_main">
+    <div class="list_main">
             <div class="list_title">
                <p class="list_title_text">
                 <a href="{% url 'articles_detail' articles.pk %}">{{ articles.title }} |</a>
@@ -15,6 +15,21 @@
             <div class="list_body">
                 <p class="list_body_text"> {{ articles.body }}</p>
             </div>
+
+            <div class="new_comm">
+                <a href="{% url 'comments_create' articles.pk %}">Оставить комментарий</a>
+            </div>
+        {% for comments in articles.comments.all %}
+        <div class="comm_main">
+            <div class="comm_author">
+               <p class="comm_author_text">{{ comments.author }}:</p> 
+            </div>
+            <div class="comm_body">
+                <p class="comm_body_text"> {{ comments.comment}}</p>
+            </div>
         </div>
+        {% endfor %}
+    </div>
     {% endfor %}
+    
 {% endblock %}
