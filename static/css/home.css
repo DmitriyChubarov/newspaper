@@ -108,24 +108,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: rgb(30,30,30);
+    flex-direction: row;
     height: 25%;
     width: 100%;
+    background-color: rgb(30,30,30);
     border-radius: 20px;
+}
+
+.home_1-2_1-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%; 
+    height: 100%;
+    background-color:rgb(183,120,247); 
+    border-top-left-radius: 20px;  
+    border-bottom-left-radius: 20px;  
+}
+
+.home_1-2_1-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
 }
 
 .home_1-2_2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     background-color: rgb(30,30,30);
     height: 75%;
     margin-top: 20px;
     width: 100%;
     border-radius: 20px;
 }
+
+.home_1-2_2-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%; 
+    height: 100%;
+    background-color:rgb(183,120,247); 
+    border-top-left-radius: 20px;  
+    border-bottom-left-radius: 20px;  
+}
+
+.home_1-2_2-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
 
 .user_name {
     text-transform: uppercase;

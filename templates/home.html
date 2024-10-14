@@ -6,14 +6,21 @@
         <div class="home_1-1">Тут что-то должно быть</div>
         <div class="home_1-2">
             <div class="home_1-2_1">
-                <p class="user_name">{{ user.username }}</p>
-                <div class="">
-                    <p class=""><a href="{% url 'changepass' %}">Изменить пароль</a></p>
-                    <p class=""><a href="{% url 'logout_' %}">Выйти</a></p>
-                    <p class=""><a href="{% url 'articles_list' %}">Форум</a></p>
+                <div class="home_1-2_1-1"></div>
+                <div class="home_1-2_1-2">
+                    <p class="user_name">{{ user.username }}</p>
+                    <div class="">
+                        <!-- {% url 'articles_list' %} --> 
+                        <p class=""><a href="{% url 'changepass' %}">Изменить пароль</a></p>  
+                        <p class=""><a href="{% url 'logout_' %}">Выйти</a></p>
+                        <p class=""><a href="#">Форум</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="home_1-2_2">Тут что-то будет</div>
+            <div class="home_1-2_2">
+                <div class="home_1-2_2-1"></div>
+                <div class="home_1-2_2-2">Тут что-то должно быть</div>
+            </div>
         </div>
     </div>
     {% else %}

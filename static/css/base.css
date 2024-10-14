@@ -20,6 +20,7 @@ a {
 .top a {
     color: white;
     font-size: 60px;
+    font-family: 'Maragsa'; 
 }
 
 .content {
@@ -30,4 +31,9 @@ a {
     height: 705px;
     width: 100%;
 }
+
+.colored {
+    color: rgb(183,120,247);
+}
+
 
