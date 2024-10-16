@@ -1,8 +1,11 @@
 html {
-    background-color: rgb(20, 20, 20);
-    color: white;
+    /* background-color: rgb(20, 20, 20); */
+    color: white; 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-image: url(https://i.ibb.co/51BngpK/image.png);
+    background-size: cover;
 }
+
 
 a {
     text-decoration: none;
